@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- doctype informa ao agente de usuário a versão de html que deve ser renderizada. -->
+<html lang="pt-br">
+    <head>
+        <title> Página de exemplo da estrutua básica. </title>
+        <meta charset="utf-8">
+        <meta name="author" content="AdeSS">
+        <meta name="description" content="lista de documentos">
+        <meta name="keywords" content="html5, web developer">
+
+        <style>
+            .formLogin{
+                width: 25px;
+                margin: 50px auto 0;
+                font-family: sans-serif;
+            }
+            .formLogin fieldset{
+                background: rgb(182, 199, 204);
+            }
+            .formLogin legend{
+                display: inline-block;
+                padding: 2px;
+                margin: auto;
+            }
+            .formLogin label{
+                margin-top: 10px;
+                display: block;
+                margin-bottom: 5px;
+            }
+            
+            #user, #pass{
+               display: block;
+               box-sizing: border-box;
+               padding: 5px;
+               font-size: 14px;
+               background: whitesmoke;
+               margin-bottom: 15px;
+               border: none;
+            }
+            #user:focus, #pass:focus{
+                background: white;
+            }
+
+            .btn{
+                width: 40%;
+                margin:auto;
+                display: block;
+                box-sizing: border-box;
+                padding: 5px;
+                font-size: 14px;  
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1>Exemplo de formulário de login</h1>
+
+        <form action="#" method="get" class="formLogin">
+
+            <fieldset>
+
+                <legend>Login</legend>
+
+                <label for="user">Usuário</label>
+                <input type="text" name="user" id="user" autofocus>
+
+                <label for="pass">Senha</label>
+                <input type="password" name="pass" id="pass">
+
+                <input type="submit" value="ENVIAR" class="btn">
+
+            </fieldset>
+           
+        </form>
+        
+    </body>
+</html>
